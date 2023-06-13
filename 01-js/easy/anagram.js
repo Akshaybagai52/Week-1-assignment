@@ -8,6 +8,14 @@
 */
 
 function isAnagram(str1, str2) {
+  if (str1.length !== str2.length) {
+    return false
+  } else {
+    const stringa = str1.sort((a, b) => a - b)
+    const stringb = str2.sort((a, b) => a - b)
+    stringa === stringb ? true : false
+
+  }
 
 }
 
